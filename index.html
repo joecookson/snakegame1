@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -21,21 +22,31 @@
   
 <style>
 .grid{
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   border-style: solid;
 }
 .grid div {
-  width: 20px;
-  height: 20 px;
+  width: 50px;
+  height: 50px;
 }
 .snake{
   background-color: blue;
 }
 .apple{
-  background-color: purple;
+  background-color: green;
+}
+.score{
+  font-size:300%;
+}
+.start{
+  font-size:150%;
+}
+h1{
+  font-size:300%;
+  color: red;
 }
 </style>
 
@@ -54,6 +65,7 @@
   <link rel="stylesheet" href="style.css"></link>
   <script src="app.js" charset="utf-8"></script>
   </head>
+<h1> Snake Game </h1>
 <body>
   
   <button class="start">Start/Restart</button>
@@ -179,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSnake = [2,1,0]
   let direction = 1
   let score = 0
-  let speed = 0.9
+  let speed = 1
   let intervalTime = 0
   let interval = 0
   
@@ -263,5 +275,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </html>
  
-
-
